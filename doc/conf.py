@@ -15,7 +15,7 @@
 import sys
 import os
 
-import sphinx_gallery
+# import sphinx_gallery
 import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -38,7 +38,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
     'numpydoc',
-    'sphinx_gallery.gen_gallery',
+    # 'sphinx_gallery.gen_gallery',
 ]
 
 # Important note: renders parameters correctly only with numpydoc <= 0.7 or sphinx <= 1.8.5
@@ -308,12 +308,12 @@ intersphinx_mapping = {
 }
 
 # sphinx-gallery configuration
-sphinx_gallery_conf = {
-    'doc_module': 'ai-minimization-toolkit',
-    'backreferences_dir': os.path.join('generated'),
-    'reference_url': {
-        'minimization': None}
-}
+# sphinx_gallery_conf = {
+#     'doc_module': 'ai-minimization-toolkit',
+#     'backreferences_dir': os.path.join('generated'),
+#     'reference_url': {
+#         'minimization': None}
+# }
 
 def setup(app):
     # a copy button to copy snippet of code from the documentation
