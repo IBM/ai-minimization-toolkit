@@ -14,8 +14,8 @@
 .. |CircleCI| image:: https://circleci.com/gh/scikit-learn-contrib/project-template.svg?style=shield&circle-token=:circle-token
 .. _CircleCI: https://circleci.com/gh/scikit-learn-contrib/project-template/tree/master
 
-.. |ReadTheDocs| image:: https://readthedocs.org/projects/sklearn-template/badge/?version=latest
-.. _ReadTheDocs: https://sklearn-template.readthedocs.io/en/latest/?badge=latest
+.. |ReadTheDocs| image:: https://readthedocs.org/projects/ai-minimization-toolkit/badge/?version=master
+.. _ReadTheDocs: https://ai-minimization-toolkit.readthedocs.io/en/master/
 
 minimization-toolkit - A toolkit for performing data minimization for machine learning models
 =============================================================================================
@@ -27,6 +27,8 @@ This toolkit is a first-of-a-kind implementation to help reduce the amount of pe
 The generalization process basically searches for several similar records and groups them together. Then, for each feature, the individual values for that feature within each group are replaced with a represenataive value that is common across the whole group. This process is done while using knowledge encoded within the model to produce a generalization that has little to no impact on its accuracy. 
 
 The minimization-toolkit is compatible with: ``Python 3.7``.
+
+Official `ai-minimization-toolkit documentation <https://ai-minimization-toolkit.readthedocs.io/en/master/>`__
 
 Using the minimization-toolkit
 ------------------------------
