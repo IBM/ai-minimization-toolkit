@@ -1,0 +1,5 @@
+name: minimization
+dependencies:
+  - numpy
+  - scipy
+  - scikit-learn
