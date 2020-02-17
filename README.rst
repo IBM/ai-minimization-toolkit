@@ -1,7 +1,7 @@
 .. -*- mode: rst -*-
 
-minimization-toolkit - A toolkit for performing data minimization for machine learning models
-=============================================================================================
+ai-minimization-toolkit - A toolkit for performing data minimization for machine learning models
+================================================================================================
 
 The EU General Data Protection Regulation (GDPR) mandates the principle of data minimization, which requires that only data necessary to fulfill a certain purpose be collected. However, it can often be difficult to determine the minimal amount of data required, especially in complex machine learning models such as neural networks. 
 
@@ -9,12 +9,25 @@ This toolkit is a first-of-a-kind implementation to help reduce the amount of pe
 
 The generalization process basically searches for several similar records and groups them together. Then, for each feature, the individual values for that feature within each group are replaced with a represenataive value that is common across the whole group. This process is done while using knowledge encoded within the model to produce a generalization that has little to no impact on its accuracy. 
 
-The minimization-toolkit is compatible with: ``Python 3.7``.
+The ai-minimization-toolkit is compatible with: ``Python 3.7``.
 
 Official `ai-minimization-toolkit documentation <https://ai-minimization-toolkit.readthedocs.io/en/master/>`__
 
-Using the minimization-toolkit
-------------------------------
+
+Installing the ai-minimization-toolkit
+--------------------------------------
+
+pip install ai-minimization-toolkit==0.0.1
+
+
+Source code
+-----------
+
+https://github.com/IBM/ai-minimization-toolkit
+
+
+Using the ai-minimization-toolkit
+---------------------------------
 
 The main class, ``GeneralizeToRepresentative``, is a scikit-learn compatible ``Transformer``, that receives an existing estimator and labeled training data, and learns the generalizations that can be applied to any newly collected data for analysis by the original model. The ``fit()`` method learns the generalizations and the ``transform()`` method applies them to new data.
 
